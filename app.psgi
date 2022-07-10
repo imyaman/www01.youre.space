@@ -1,8 +1,9 @@
-use strict;
-use Dancer;
+#!/usr/bin/env perl
+use Dancer2;
 
 get '/' => sub {
-    send_file '/index.html'
+    return 'Hello World!';
 };
 
-dance;
+start;
+
